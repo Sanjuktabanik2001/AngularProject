@@ -1,0 +1,84 @@
+body {
+    background-color: #370617;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 170px;
+    font-family: "Montserrat"; /*changes*/
+    color: white;
+    font-weight: lighter; /*changes*/
+    padding-top: 30px;
+    letter-spacing: 80px;
+  }
+  .card {
+    padding: 20px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* box-shadow: 8.0px 16.0px 16.0px hsla(0, 82%, 78%, 0.25);  */
+    box-shadow: 1.5px 3px 3px hsla(0, 82%, 78%, 0.25);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 8px 16px 16px hsla(0, 82%, 78%, 0.25);
+    transform: scale(1.05);
+  }
+  .card h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .card h6 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .card p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+  }
+  .card img:hover {
+    transform: scale(1.1);
+  }
+  div.btn {
+    display: flex;
+    justify-content: center;
+  }
+  div.btn a {
+    text-decoration: none;
+    color: white;
+  }
+  .cart-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .cart-item img {
+    max-width: 100px;
+  }
+  .alert {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    transition: opacity 0.5s ease-out;
+  }
+  
+  .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+  }

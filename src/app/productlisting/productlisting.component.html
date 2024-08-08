@@ -1,0 +1,290 @@
+<div>
+  <div class="titlebox">
+    <h1><b>Our Listings</b></h1>
+    <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+  </div>
+  <!-- Filter/Sort  -->
+
+  <div class="buttons-container">
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary me-2"
+      style="background-color: #b5545e; border-color: #b5545e"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      <i class="fa-solid fa-filter"></i> &nbsp; Filters
+    </button>
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      style="background-color: #b5545e; border-color: #b5545e"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal2"
+    >
+      <i class="fa-solid fa-sort"></i> &nbsp; Sort
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Filtered By</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>Featured collections</p>
+          <div class="container">
+            <div class="row row-equal">
+              <div class="cards col-md-5">
+                <label><i class="fas fa-gift"></i> Gift Hampers</label>
+              </div>
+              <div class="cards col-md-5">
+                <label><i class="fas fa-star"></i> Case of the Month</label>
+              </div>
+            </div>
+            <div class="row row-equal">
+              <div class="cards col-md-5">
+                <label
+                  ><i class="fa-solid fa-circle-half-stroke"></i> Organic
+                  Wine</label
+                >
+              </div>
+              <div class="cards col-md-5">
+                <label
+                  ><i class="fa-solid fa-thumbs-up"></i> New Arrivals</label
+                >
+              </div>
+            </div>
+            <div class="row row-equal">
+              <div class="cards col-md-5">
+                <label
+                  ><i class="fa-solid fa-anchor"></i> Majestic Bordeaux</label
+                >
+              </div>
+              <div class="cards col-md-5">
+                <label
+                  ><i class="fa-solid fa-hand-holding-heart"></i> Low-Alcohol
+                  Wines</label
+                >
+              </div>
+            </div>
+          </div>
+          <p>Wine Type</p>
+          <div class="container">
+            <div class="row row-equal">
+              <div class="cards col-md-5">
+                <label
+                  ><i class="fa-solid fa-wine-glass"></i>&nbsp;&nbsp;Red
+                  Wine</label
+                >
+              </div>
+              <div class="cards col-md-5">
+                <label
+                  ><i class="fa-solid fa-wine-glass"></i>&nbsp;&nbsp;White
+                  Wine</label
+                >
+              </div>
+            </div>
+            <div class="row row-equal">
+              <div class="cards col-md-5">
+                <label
+                  ><i class="fa-solid fa-wine-glass"></i>&nbsp;&nbsp;Sparkling
+                  Wine</label
+                >
+              </div>
+              <div class="cards col-md-5">
+                <label
+                  ><i class="fa-solid fa-wine-glass"></i
+                  >&nbsp;&nbsp;Champagne</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="exampleModal2"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sort By</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>Sort According To</p>
+          <div class="container">
+            <div class="row row-equal">
+              <div class="form-check col-md-6">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Product Name A-Z
+                </label>
+              </div>
+              <div class="form-check col-md-6">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Product Name Z-A
+                </label>
+              </div>
+            </div>
+            <div class="row row-equal">
+              <div class="form-check col-md-6">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Price: Low to High
+                </label>
+              </div>
+              <div class="form-check col-md-6">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Price: High to Low
+                </label>
+              </div>
+            </div>
+            <div class="row row-equal">
+              <div class="form-check col-md-6">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Popularity: Low to High
+                </label>
+              </div>
+              <div class="form-check col-md-6">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Popularity: High to Low
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-primary"
+            style="background-color: #b5545e; border-color: #b5545e"
+          >
+            Apply
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Listing  -->
+  &nbsp;<br />
+  &nbsp;<br />
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let product of products" class="col-md-4">
+        <div class="card">
+          <img [src]="product.image" class="img-fluid" alt="Product Image" />
+          <h3>{{ product.name }}</h3>
+          <h6>
+            <i>Flavours: {{ product.flavours }}</i>
+          </h6>
+          <p>
+            <strong>{{ product.price }}</strong>
+          </p>
+          <div class="cartwishbox">
+            <button
+            (click)="addToCart(product)"
+            type="button"
+            class="btn btn-outline-success"
+          >
+            <i class="fa fa-shopping-cart"></i>
+            Add to Cart
+          </button>
+          <!-- <a [routerLink]="['/wishlist']"><i class="bi bi-heart-fill"></i></a> -->
+           <button class="likebutton" [ngClass]="{}"(click)="addtoWishList(product)"><i class="bi bi-heart"></i></button>
+           <!-- <p-button icon="pi pi-heart" [rounded]="true" severity="help" /> -->
+           <!-- <button type="button" class="btn btn-outline-danger"><i class="bi bi-heart"></i></button> -->
+          <!--  <button class="likebutton" >
+            <p-button  icon="pi pi-heart" [rounded]="true" [text]="true" [raised]="true" severity="help"  (click)="addtoWishList(product)"/>
+           </button> -->
+           <!--  -->
+           
+           <!--  -->
+           <div class="flex justify-content-center flex-wrap gap-3 mb-4">
+            <!-- <p-button icon="pi pi-heart" [rounded]="true" [text]="true" [raised]="true" severity="help" /> -->
+        </div>
+          </div>
+          <div class="quantity-container">
+            <button class="quantity-button" (click)="decreaseQuantity(product)">
+              -
+            </button>
+            <input
+              type="number"
+              class="quantity-input"
+              [(ngModel)]="product.quantity"
+            />
+            <button class="quantity-button" (click)="increaseQuantity(product)">
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="alert alert-success" *ngIf="showPrompt">
+    {{ promptMessage }}
+  </div>
+</div>

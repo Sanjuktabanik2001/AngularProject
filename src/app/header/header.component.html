@@ -1,0 +1,80 @@
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #b5545e">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#"
+        ><img src="../../assets/images/winsterlogo.png" width="100px"
+      /></a>
+
+      <!-- Toggle Btn -->
+      <button
+        class="navbar-toggler shadow-none border-0"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Sidebar -->
+      <div
+        class="sidebar offcanvas offcanvas-start"
+        style="background: #b5545e"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <!-- Sidebar-Header -->
+        <div class="offcanvas-header text-black border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Winster.Co</h5>
+          <button
+            type="button"
+            class="btn-close btn-close-dark shadow-none"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <!-- Sidebar Body -->
+        <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-3">
+          <ul
+            class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3"
+          >
+            <li class="nav-item mx-2">
+              <a class="nav-link active text-black" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-black" routerLink="/aboutsection"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-black" routerLink="/gallery">Gallery</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-black" routerLink="/productlisting"
+                >Listings</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-black" routerLink="/contact">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Login/Sign up -->
+          <div class="d-flex flex-column flex-lg-row align-items-center gap-3">
+            <a [routerLink]="['/wishlist']"><i class="bi bi-heart-fill"></i></a>
+            <a href="#"><i class="bi bi-bell-fill"></i></a>
+            <a href=""><i class="bi bi-person-fill"></i></a>
+            <a [routerLink]="['/cart']"><i class="bi bi-cart-fill"></i><span class="badge">{{cartItems.length}} </span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</body>

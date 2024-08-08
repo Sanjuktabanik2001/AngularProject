@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+footer{
+    background-color: #b5545e;
+    width: 100%;
+
+  }
+.container-fluid{
+    width: 100%;
+    justify-content: space-evenly;
+}
+  .mb-4{
+      color: black;
+  }
+ .img{
+    height: 150px;
+
+ }
+ #btn{
+    background-color: #370617 ;
+    color: white;
+    padding: 3%;
+    margin-top: 10px;
+    
+ }
+ .container-fluid{
+    width: 100%;
+ }
+ i{
+    color: rgb(45, 23, 23);
+    font-size: xx-large;
+ }

@@ -1,0 +1,40 @@
+<br>
+<br>
+<body>
+  <div class="paymentcontainers">
+      <div class="payment-form">
+        <h2>Payment Details</h2>
+        <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <input type="number" id="cardNumber" formControlName="cardNumber" placeholder="Enter card number" class="form-control" required minlength="12">
+            <div style="color: red;" *ngIf="paymentForm.get('cardNumber')?.invalid && paymentForm.get('cardNumber')?.touched" class="invalid">
+              Invalid card number <br> Enter your valid 16 digit card number
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="text" id="expiryDate" formControlName="expiryDate" placeholder="MM/YY">
+            <div style="color: red;" *ngIf="paymentForm.get('expiryDate')?.invalid && paymentForm.get('expiryDate')?.touched">
+              Invalid expiry date <br> Enter in MM/YY format
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="number" id="cvv" formControlName="cvv" placeholder="CVV">
+            <div style="color: red;" *ngIf="paymentForm.get('cvv')?.invalid && paymentForm.get('cvv')?.touched">
+              Invalid CVV <br> Enter your valid 3-digit cvv
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="text" id="cardHolderName" formControlName="cardHolderName" placeholder="Cardholder name">
+            <div style="color: red;" *ngIf="paymentForm.get('cardHolderName')?.invalid && paymentForm.get('cardHolderName')?.touched">
+              Card holder name is required <br> Enter the name on the card
+            </div>
+          </div>
+
+          <button type="submit">Submit Payment</button>
+        </form>
+      </div>
+    </div>
+</body>

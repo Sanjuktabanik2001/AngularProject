@@ -1,0 +1,145 @@
+body {
+  /* background-image: url(images/4.jpeg);
+    background-size: cover; */
+  color: rgb(65, 1, 1);
+}
+.titlebox {
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(6, 6, 6);
+  letter-spacing: 7px;
+  font-family: "Abril";
+}
+.bi {
+  font-size: 1.5em;
+}
+/* Filter/Sort  */
+.cards {
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f8b3ba;
+}
+.row-equal > .cards {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+.card:hover {
+  transform: scale(1.15);
+  transition-timing-function: ease-in-out;
+}
+.dropdown-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.buttons-container {
+  position: absolute;
+  left: 75%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+/* Product Listing  */
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  padding: 20px;
+  margin: 40px;
+  display: flex;
+  /* justify-content: center;  */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* box-shadow: 10px 10px #959494;  */
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  height: 500px;
+}
+.card:hover {
+  box-shadow: 7px 7px #b5545e;
+  transform: scale(1.05);
+}
+.card h3 {
+  font-size: 20px;
+  text-align: center;
+}
+.card h6 {
+  font-size: 15px;
+  text-align: center;
+}
+.card p {
+  font-size: 20px;
+  text-align: center;
+}
+.card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
+}
+.card i {
+  color: #370617;
+}
+.card img:hover {
+  transform: scale(1.1);
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quantity-button {
+  width: 40px;
+  background-color: #f8b3ba;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.quantity-input {
+  width: 60px;
+  text-align: center;
+  border-radius: 70px;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+.alert {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  transition: opacity 0.5s ease-out;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+button {
+  margin: 5px;
+}
+.cartwishbox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.likebutton{
+  border: 0 black;
+  background-color: white;
+}

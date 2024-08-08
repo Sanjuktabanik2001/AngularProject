@@ -1,0 +1,136 @@
+<body>
+<!---Carousel-->
+<div id="carouselIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../assets/images/Winster.png" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/images/Our Best Sellers.png" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/images/Sale.png" class="d-block w-100" alt="">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+  
+  <br>
+  <br>
+  
+  <!---Youtube Video-->
+  <h2>VINES TO YOUR BOTTLE OF WINE</h2>
+  <div class="container">
+    <iframe width="900" height="400" 
+    src="https://www.youtube.com/embed/0SJhcXVSbE8?si=gETzF9gYjCjLYgBz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    
+  </div>
+  <br>
+  <br>
+
+  <!-----Selection-->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"><b>OUR RANGES</b></h1>
+        <div class="work-list">
+            <div  class="work">
+                <img src="../../assets/images/1.jpeg">
+                <div class="layer">
+                    <h3><b>RASA</b></h3>
+                    <p><b>The RASA concept for wines has been created with the idea to produce, through artisan winemaking and very selective triage, the best red wines India has ever made.</b></p>
+                    
+                </div>
+            </div>          
+            <div class="work">
+                <img src="../../assets/images/11.webp">
+                <div class="layer">
+                    <h3><b>DINDORI</b></h3>
+                    <p> Sula's Dindori Reserve highlights our winemakers and their endeavors, usingtheir winemaking skills and tools asartisans with Shiraz, Viognier and mostrecently Chardonnay.</p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                    <img src="../../assets/images/6.jpeg">
+                    <div class="layer">
+                        <h3><b>THE SOURCE</b></h3>
+                        <p>With 'The Source'  wine portfolio, Sula has focused on select vineyard sites, crafting memorable and tasty Sauvignon Blanc and Grenache Rose. Wines made for 'The Source' are made with craftsmanship. The Sauvignon Blanc is aged in French Oak barrels texture and elegance.</p>
+                        
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!-----Demo Products-->
+
+&nbsp;
+<br>
+&nbsp;
+<br>
+<h2>Our Vine De Table</h2>
+ <div class="row">
+      <div *ngFor="let product of products | slice:0:6;" class="col-md-4">
+        <div class="card">
+          <img [src]="product.image" class="img-fluid" alt="Product Image" />
+          <h3>{{ product.name }}</h3>
+          <h6>
+            <i>Flavours: {{ product.flavours }}</i>
+          </h6>
+          <p>
+            <strong>{{ product.price }}</strong>
+          </p>
+          <div class="cartwishbox">
+            <button
+            (click)="addToCart(product)"
+            type="button"
+            class="btn btn-outline-success"
+          >
+            <i class="fa fa-shopping-cart"></i>
+            Add to Cart
+          </button>
+           <button class="likebutton" [ngClass]="{}"(click)="addtoWishList(product)"><i class="bi bi-heart"></i></button>
+           <div class="flex justify-content-center flex-wrap gap-3 mb-4">
+        </div>
+          </div>
+          <div class="quantity-container">
+            <button class="quantity-button" (click)="decreaseQuantity(product)">
+              -
+            </button>
+            <input
+              type="number"
+              class="quantity-input"
+              [(ngModel)]="product.quantity"
+            />
+            <button class="quantity-button" (click)="increaseQuantity(product)">
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-success" *ngIf="showPrompt">
+        {{ promptMessage }}
+      </div>
+    </div>
+    <div class="button-container">
+        <a routerLink="/productlisting">
+            <button class="btn btn-primary" style="background-color: #b5545e; border-color: white; border-radius: 5px;">
+                <i class="fa-solid fa-eye" style="color: #370617;"></i> View More
+            </button>
+        <br>
+        <br>
+        <br>
+        </a>
+    </div>
+</body>
